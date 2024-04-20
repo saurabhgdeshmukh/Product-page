@@ -154,6 +154,25 @@ overlayCloseBtn.addEventListener("click", function () {
   }
 });
 
+const addToCartBtn = document.getElementById('addToCartBtn');
+const messageDiv = document.getElementById('message');
+
+addToCartBtn.addEventListener('click', function() {
+  showMessage('Embrace Sideboard with Color Yellow and Size Small added to cart');
+});
+
+function showMessage(message) {
+  messageDiv.textContent = message;
+  messageDiv.style.display = 'block';
+
+  // Hide the message after 3 seconds
+  setTimeout(function() {
+    messageDiv.textContent = '';
+    messageDiv.style.display = 'none';
+  }, 3000);
+}
+
+
 overlayImgBtn.forEach((btn, i) => {
   btn.addEventListener("click", function (e) {
     overlayImg.src = `images/image-product-${i + 1}.jpg`;
@@ -165,6 +184,7 @@ imgBtn.forEach((btn, i) => {
     img.src = `images/image-product-${i + 1}.jpg`;
   });
 });
+
 
 window.addEventListener("load", function () {
   transitionDelay();

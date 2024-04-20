@@ -547,7 +547,7 @@ body {
     width: 100px;
     height: 100px;
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
     margin-left: 10px;
 }
 
@@ -642,4 +642,15 @@ input[type="radio"]:checked + label {
 
 #description{
   margin-top: 40px;
+}
+#message{
+  background-color:#E7F8B7;
+  padding: 5px;
+  display: flex;
+  justify-items: center;
+  border-radius: 10px;
+  margin-left: 9%;
+  margin-right: 13%;
+  font-weight: 600;
+  font-size: 10px;
 }
